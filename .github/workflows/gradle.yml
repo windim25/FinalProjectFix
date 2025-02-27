@@ -35,9 +35,9 @@ jobs:
           chrome-options: '--headless' # (Jika ingin menjalankan dalam mode headless'
           
     - name: Build with Gradle
-      run: |
+      run: 
          chmod +x gradlew    
-         ./gradlew build  |
+         ./gradlew build  
 
     - name: Run Tests
       run: ./gradlew clean test # Run tests after the build step
